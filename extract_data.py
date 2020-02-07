@@ -1,3 +1,5 @@
+DATA_DIR = 'raw-data/'
+
 filenames = {
     20: 'nyc_pluto_20v1_csv/pluto_20v1.csv',
     17: 'Borofiles_CSV/MN2017V1.csv',
@@ -17,7 +19,7 @@ def extract_columbia(f):
 if __name__ == '__main__':
     for y in filenames.keys():
         print('Year', y, '=' * 5)
-        with open('data/' + filenames[y]) as f:
+        with open(DATA_DIR + filenames[y]) as f:
             rows = extract_columbia(f)
             print(len(rows))
         with open(f'out-{y}.csv', 'w') as f:
