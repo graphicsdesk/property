@@ -2,9 +2,9 @@ DATA_DIR = 'raw-data/'
 
 filenames = {
     2020: 'nyc_pluto_20v1_csv/pluto_20v1.csv',
-    2017: 'Borofiles_CSV/MN2017V1.csv',
-    2014: 'nyc_pluto_14v1/MN.csv',
-    2011: 'nyc_pluto_11v1/MN11v1.txt',
+    # 2017: 'Borofiles_CSV/MN2017V1.csv',
+    # 2014: 'nyc_pluto_14v1/MN.csv',
+    # 2011: 'nyc_pluto_11v1/MN11v1.txt',
 }
 
 def extract_columbia(f, year):
