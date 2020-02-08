@@ -1,4 +1,5 @@
-aggregate.json:
+aggregate.svg:
 	mapshaper aggregate.csv \
 	  -points x=longitude y=latitude \
-	  -o format=geojson
+		-style r=4 \
+	  -o format=svg
